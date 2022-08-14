@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Верстка , досвід , навчання" />
+    <meta
+      name="description"
+      content="Створення веб сайту за макетом з допомогою файних менторів та
+      вчителів команди GoIt"
+      />
+    <title>WebStudio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+      />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="page-header">
+      <div class="container">
+        <div class="header-top">
+          <a class="header-logo" href="./index.html"><span
+              class="logo-text-left">Web</span>Studio</a>
+          <!-- navigation -->
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li>
+                <a class="nav-link current" href="./index.html">Студія</a>
+              </li>
+              <li><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
+              <li><a class="nav-link" href="#">Контакти</a></li>
+            </ul>
+          </nav>
+          <!-- contact list -->
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a class="contact-link" href="mailto:info@devstudio.com"><svg
+                  class="contact-icon mail" width="16" height="12">
+                  <use xlink:href="./images/sprite.svg#icon-mail"></use></svg>info@devstudio.com</a>
+            </li>
+            <li class="contact-item">
+              <a class="contact-link" href="tel:+380961111111">
+                <svg class="contact-icon phone" width="10" height="16">
+                  <use xlink:href="./images/sprite.svg#icon-phone"></use></svg>+38
+                096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <!-- closed header top -->
+      </div>
+      <!--header container closed-->
+    </header>
+    <main>
+      <!-- promo-block -->
+      <section class="promo-box">
+        <div class="container">
+          <h1 class="promo-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="btn-promo" value="" data-modal-open>
+            Замовити послугу
+          </button>
+        </div>
+      </section>
+      <!-- peculiarities -->
+      <section class="peculiarities">
+        <div class="container">
+          <h2 class="visually-hidden">Наші особливості</h2>
+          <ul class="peculiarities-list">
+            <li>
+              <div class="peculiarities-mask">
+                <svg class="peculiarities-icon">
+                  <use xlink:href="./images/sprite.svg#antena"></use>
+                </svg>
+              </div>
+              <h3 class="peculiarities-title">Увага до деталей</h3>
+              <p class="peculiarities-description">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li>
+              <div class="peculiarities-mask">
+                <svg class="peculiarities-icon">
+                  <use xlink:href="./images/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <h3 class="peculiarities-title">Пунктуальність</h3>
+              <p class="peculiarities-description">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li>
+              <div class="peculiarities-mask">
+                <svg class="peculiarities-icon">
+                  <use xlink:href="./images/sprite.svg#diagram"></use>
+                </svg>
+              </div>
+              <h3 class="peculiarities-title">Планування</h3>
+              <p class="peculiarities-description">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li>
+              <div class="peculiarities-mask">
+                <svg class="peculiarities-icon">
+                  <use xlink:href="./images/sprite.svg#astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="peculiarities-title">Сучасні технології</h3>
+              <p class="peculiarities-description">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!--peculiarities container closed-->
+      </section>
+      <!-- craft -->
+      <section class="craft">
+        <div class="container">
+          <h2 class="craft-title">Чим ми займаємося</h2>
+          <ul class="craft-list">
+            <li>
+              <div class="craft-wrapper">
+                <img
+                  class="craft-photo"
+                  src="./images/work-1.jpg"
+                  alt="людина працює за компьютером"
+                  width="370"
+                  height="294"
+                  />
+                <div class="craft-label">
+                  <p class="craft-label-description">Десктопні додатки</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="craft-wrapper">
+                <img
+                  class="craft-photo"
+                  src="./images/work-2.jpg"
+                  alt="людина працює с телефоном"
+                  width="370"
+                  height="294"
+                  />
+                <div class="craft-label">
+                  <p class="craft-label-description">Мобільні додатки</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="craft-wrapper">
+                <img
+                  class="craft-photo"
+                  src="./images/work-3.jpg"
+                  alt="людина працює с планшетом"
+                  width="370"
+                  height="294"
+                  />
+                <div class="craft-label">
+                  <p class="craft-label-description">Дизайнерські рішення</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--craft-container closed-->
+      </section>
+      <!-- comands -->
+      <section class="comands">
+        <div class="container">
+          <h2 class="comands-title">Наша команда</h2>
+          <ul class="comands-list">
+            <li class="comands-item">
+              <img
+                class="command-photo"
+                src="./images/igor.jpg"
+                alt="Ігор Дем'яненко посміхаеться"
+                width="270"
+                height="260"
+                />
+              <div class="command-box-wrapper">
+                <h3 class="specialist-name">Ігор Дем'яненко</h3>
+                <p class="profession">Product Designer</p>
+                <ul class="commands-social">
+                  <!-- inst icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- twitt icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- facebook icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- linkedin icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="comands-item">
+              <img
+                class="command-photo"
+                src="./images/olga.jpg"
+                alt="Блондинка Ольга Рєпіна посміхаеться в окулярах"
+                width="270"
+                height="260"
+                />
+              <div class="command-box-wrapper">
+                <h3 class="specialist-name">Ольга Рєпіна</h3>
+                <p class="profession">Frontend Developer</p>
+                <ul class="commands-social">
+                  <!-- inst icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- twitt icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- facebook icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- linkedin icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="comands-item">
+              <img
+                class="command-photo"
+                src="./images/mikola.jpg"
+                alt="щасливий Микола Тарасов дивиться в даль та посміхаеться"
+                width="270"
+                height="260"
+                />
+              <div class="command-box-wrapper">
+                <h3 class="specialist-name">Микола Тарасов</h3>
+                <p class="profession">Marketing</p>
+                <ul class="commands-social">
+                  <!-- inst icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- twitt icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- facebook icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- linkedin icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="comands-item">
+              <img
+                class="command-photo"
+                src="./images/miha.jpg"
+                alt="Михайло Єрмаков в окулярах дивиться на тебе як на здобич"
+                width="270"
+                height="260"
+                />
+              <div class="command-box-wrapper">
+                <h3 class="specialist-name">Михайло Єрмаков</h3>
+                <p class="profession">UI Designer</p>
+                <ul class="commands-social">
+                  <!-- inst icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- twitt icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- facebook icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!-- linkedin icon -->
+                  <li class="comands-social-item">
+                    <a
+                      class="commands-link"
+                      href="#"
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <svg class="commands-icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--commands container closed-->
+      </section>
+      <!-- clients -->
+      <section class="clients">
+        <div class="container">
+          <h2 class="clients-title">Постійні клієнти</h2>
+          <ul class="clients-group">
+            <!-- client 1 -->
+            <li class="clients-item">
+              <a
+                class="client-link"
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank">
+                <svg class="clients-icon" width="106" height="60">
+                  <use xlink:href="./images/sprite.svg#client-one"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- client 2 -->
+            <li class="clients-item">
+              <a
+                class="client-link"
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank">
+                <svg class="clients-icon" width="106" height="60">
+                  <use xlink:href="./images/sprite.svg#client-two"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- client 3 -->
+            <li class="clients-item">
+              <a
+                class="client-link"
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank">
+                <svg class="clients-icon" width="106" height="60">
+                  <use xlink:href="./images/sprite.svg#client-three"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- client 4-->
+            <li class="clients-item">
+              <a
+                class="client-link"
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank">
+                <svg class="clients-icon" width="106" height="60">
+                  <use xlink:href="./images/sprite.svg#client-four"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- client 5 -->
+            <li class="clients-item">
+              <a
+                class="client-link"
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank">
+                <svg class="clients-icon" width="106" height="60">
+                  <use xlink:href="./images/sprite.svg#client-five"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- client 6 -->
+            <li class="clients-item">
+              <a
+                class="client-link"
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank">
+                <svg class="clients-icon" width="106" height="60">
+                  <use xlink:href="./images/sprite.svg#client-six"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--main-closed-->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-box-adress">
+          <a class="footer-logo" href="./index.html"><span
+              class="logo-text-left">Web</span>Studio</a>
+          <address class="footer-adress">
+            <ul class="adress-list">
+              <li class="footer-adress-item">
+                <a
+                  class="footer-link-adress"
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  rel="noreferrer noopener"
+                  target="_blank">м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="footer-adress-item">
+                <a class="footer-link-mail" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="footer-adress-item">
+                <a class="footer-link-phone" href="tel:+380991111111">+38 099
+                  111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- footer social -->
+        <div class="footer-social">
+          <h3 class="footer-title">приєднуйтесь</h3>
+          <ul class="social-list">
+            <li>
+              <a
+                class="footer-social-link"
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank"><svg class="footer-icon" width="20" height="20">
+                  <use xlink:href="./images/sprite.svg#instagram"></use></svg></a>
+            </li>
+            <li>
+              <a
+                class="footer-social-link"
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank">
+                <svg class="footer-icon" width="20" height="20">
+                  <use xlink:href="./images/sprite.svg#twitter"></use></svg></a>
+            </li>
+            <li>
+              <a
+                class="footer-social-link"
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank">
+                <svg class="footer-icon" width="20" height="20">
+                  <use xlink:href="./images/sprite.svg#facebook"></use></svg></a>
+            </li>
+            <li>
+              <a
+                class="footer-social-link"
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank"><svg class="footer-icon" width="20" height="20">
+                  <use xlink:href="./images/sprite.svg#linkedin"></use></svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--container footer closed-->
+    </footer>
+    <!-- modal window -->
+    <div class="back-drop-modal is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" class="modal-btn-closed" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use xlink:href="./images/sprite.svg#closed"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./main.js/modal.js"></script>
+  </body>
+</html>
