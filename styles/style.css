@@ -720,11 +720,11 @@ body {
   align-items: center;
   cursor: pointer;
   color: var(--color-main-light);
+  transition: var(--trasition-cubic-bazier);
 }
 
 .modal-btn-closed:hover {
   transform: rotate(90deg);
-  transition: var(--trasition-cubic-bazier);
   background-color: rgba(33, 150, 243, 0.9);
   border-color: rgba(33, 150, 243, 0.9);
 }
