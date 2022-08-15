@@ -124,6 +124,7 @@ body {
   padding-bottom: 32px;
   display: block;
   position: relative;
+  transition: var(--trasition-cubic-bazier);
 }
 
 .nav-link::after {
@@ -142,7 +143,6 @@ body {
 .nav-link:hover:after,
 .nav-link:focus:after {
   opacity: 1;
-  transition: var(--trasition-cubic-bazier);
 }
 
 .nav-link:hover,
