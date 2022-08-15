@@ -429,6 +429,7 @@ body {
   align-items: center;
   fill: currentColor;
   color: var(--social-standart-color);
+  transition: var(--trasition-cubic-bazier);
 }
 
 .commands-icon {
@@ -439,7 +440,6 @@ body {
 .commands-link:focus {
   background-color: var(--activ-logo-color);
   fill: var(--color-main-light);
-  transition: var(--trasition-cubic-bazier);
 }
 
 /* clients */
@@ -464,6 +464,7 @@ body {
   border: 1px solid var(--social-standart-color);
   border-radius: var(--border-radius-button);
   cursor: pointer;
+  transition: var(--trasition-cubic-bazier);
 }
 
 .clients-icon {
@@ -474,7 +475,6 @@ body {
 .client-link:focus .clients-icon {
   color: var(--activ-logo-color);
   border-color: var(--activ-logo-color);
-  transition: var(--trasition-cubic-bazier);
 }
 
 /* footer */
@@ -512,6 +512,7 @@ body {
 .footer-link-adress {
   font-style: normal;
   color: var(--color-main-light);
+  transition: var(--trasition-cubic-bazier);
 }
 
 /* footer mail and phone */
@@ -519,20 +520,19 @@ body {
 .footer-link-phone {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+  transition: var(--trasition-cubic-bazier);
 }
 
 .footer-link-adress:hover,
 .footer-link-mail:hover,
 .footer-link-phone:hover {
   color: var(--activ-logo-color);
-  transition: var(--trasition-cubic-bazier);
 }
 
 .footer-link-adress:focus,
 .footer-link-mail:focus,
 .footer-link-phone:focus {
   color: var(--activ-logo-color);
-  transition: var(--trasition-cubic-bazier);
 }
 
 /* social box */
@@ -557,6 +557,7 @@ body {
   align-items: center;
   border-radius: var(--border-radius);
   background-color: var(--footer-social-color);
+  transition: var(--trasition-cubic-bazier);
 }
 
 .footer-icon {
@@ -567,7 +568,6 @@ body {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--activ-logo-color);
-  transition: var(--trasition-cubic-bazier);
 }
 
 /* portfolio */
@@ -593,6 +593,7 @@ body {
   padding: 6px 22px;
   cursor: pointer;
   border-radius: var(--border-radius-button);
+  transition: var(--trasition-cubic-bazier);
 }
 
 .filter-btn:hover,
@@ -601,7 +602,6 @@ body {
   color: var(--color-main-light);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: var(--trasition-cubic-bazier);
 }
 
 .portfolio-list {
@@ -609,6 +609,16 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: var(--flex-list-gap);
+}
+
+.portfolio-link {
+  display: inline-block;
+  transition: var(--trasition-cubic-bazier);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-overlay-wrapper {
@@ -626,28 +636,19 @@ body {
   transform: translateY(100%);
   opacity: 0;
   padding: 63px 24px;
-  transition: transform var(--trasition-cubic-bazier);
+  transition: var(--trasition-cubic-bazier);
+}
+
+.portfolio-link:hover .portfolio-overlay,
+.portfolio-link:focus .portfolio-overlay {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .portfolio-overlay-description {
   font-size: 18px;
   line-height: 1.55;
   color: var(--color-main-light);
-}
-
-.portfolio-item:hover .portfolio-overlay {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.portfolio-item:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: var(--trasition-cubic-bazier);
-}
-
-.portfolio-link:focus {
-  display: block;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* border wrapper */
@@ -714,20 +715,26 @@ body {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   background-color: transparent;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  color: var(--color-main-light);
 }
 
 .modal-btn-closed:hover {
-  transform: rotate(90deg) scale(1.1);
+  transform: rotate(90deg);
   transition: var(--trasition-cubic-bazier);
+  background-color: rgba(33, 150, 243, 0.9);
+  border-color: rgba(33, 150, 243, 0.9);
 }
 
 .modal-close-icon {
   position: absolute;
   display: block;
   fill: #000000;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+.modal-btn-closed:hover .modal-close-icon {
+  fill: currentColor;
 }
