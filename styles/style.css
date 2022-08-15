@@ -137,12 +137,13 @@ body {
   height: 4px;
   border-radius: 2px;
   background-color: var(--activ-logo-color);
-  opacity: 0;
+  transform: scaleX(0);
+  transition: var(--trasition-cubic-bazier);
 }
 
 .nav-link:hover:after,
 .nav-link:focus:after {
-  opacity: 1;
+  transform: scaleX(1);
 }
 
 .nav-link:hover,
@@ -164,7 +165,7 @@ body {
   height: 4px;
   border-radius: 2px;
   background-color: var(--activ-logo-color);
-  opacity: 1;
+  transform: scaleX(1);
 }
 
 /* contact list */
